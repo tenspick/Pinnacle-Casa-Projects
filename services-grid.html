@@ -78,6 +78,193 @@
             height: 100%;
             object-fit: cover;
         }
+
+        /* Detailed Services Section - DARK THEME DEFAULT */
+        .detailed-services-section {
+            background-color: #1a1a1a !important;
+        }
+
+        .detailed-service-item {
+            background: #2d2d2d !important;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            border: 1px solid #404040;
+        }
+
+        .detailed-service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+        }
+
+        .service-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #ff6b35;
+        }
+
+        .service-header i {
+            background: linear-gradient(135deg, #ff6b35, #ff8e53);
+            padding: 15px;
+            border-radius: 12px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-header i img {
+            width: 24px;
+            height: 24px;
+            filter: brightness(0) invert(1);
+        }
+
+        .service-header h3 {
+            margin: 0;
+            color: #ffffff !important;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .service-content p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+            color: #b8b8b8 !important;
+        }
+
+        .service-content p strong {
+            color: #ffffff !important;
+            font-weight: 600;
+        }
+
+        .features-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .features-list li {
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            color: #b8b8b8 !important;
+            font-size: 14px;
+        }
+
+        .features-list li i {
+            margin-right: 10px;
+            color: #ff6b35 !important;
+            font-size: 12px;
+        }
+
+        .cta-section {
+            background: #2d2d2d !important;
+            color: white;
+            padding: 50px 30px;
+            border-radius: 20px;
+            margin-top: 50px;
+            border: 1px solid #404040;
+        }
+
+        .cta-section h3 {
+            color: white !important;
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            color: #b8b8b8 !important;
+            margin-bottom: 30px;
+        }
+
+        .cta-btn {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn .primary-btn {
+            background: #ff6b35 !important;
+            color: white !important;
+            border: 2px solid #ff6b35 !important;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn .primary-btn:hover {
+            background: transparent !important;
+            color: #ff6b35 !important;
+            border-color: #ff6b35 !important;
+        }
+
+        .btn-outline {
+            background: transparent !important;
+            border: 2px solid #ff6b35 !important;
+            color: #ff6b35 !important;
+        }
+
+        .btn-outline:hover {
+            background: #ff6b35 !important;
+            color: white !important;
+        }
+
+        .detailed-services-section .section-title h2 {
+            color: #ffffff !important;
+        }
+
+        .detailed-services-section .section-title p {
+            color: #b8b8b8 !important;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .detailed-service-item {
+                padding: 20px;
+            }
+
+            .service-header {
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+            .service-header i {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .features-list ul {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-btn {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-btn .primary-btn {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .btn-outline {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
@@ -406,60 +593,165 @@
     </section>
     <!-- end build section -->
 
-    <!-- start amazing projects section -->
-    <section class="amazing-projects-section projects-two pb-70">
+    <!-- start detailed services section -->
+    <section class="detailed-services-section pt-100 pb-70">
         <div class="container">
-            <div class="row no-wrap">
-                <div class="col-lg-5 col-md-12">
-                    <div class="projects-content">
-                        <h2>Some Recent Very Amazing Projects</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="cta-btn">
-                            <a href="projects.html" class="primary-btn">Explore All Projects</a>
+            <div class="section-title">
+                <h2>Our Services In <span>Detail</span></h2>
+                <p>Comprehensive construction solutions tailored for modern Indian homes and lifestyle needs.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="detailed-service-item">
+                        <div class="service-header">
+                            <i><img src="assets/img/icons/bricks.png" alt="Residential Construction"></i>
+                            <h3>Residential Construction</h3>
+                        </div>
+                        <div class="service-content">
+                            <p><strong>Independent Houses & Villas:</strong> Custom-designed luxury homes with modern
+                                amenities, spacious layouts, and traditional architectural elements that reflect
+                                Karnataka's rich heritage.</p>
+                            <p><strong>Apartments & Multi-Unit Dwellings:</strong> Contemporary apartment complexes with
+                                smart home features, community amenities, and vastu-compliant designs for urban living.
+                            </p>
+                            <p><strong>Duplex & Triplex Homes:</strong> Multi-level residences optimizing space
+                                utilization with separate family units, perfect for joint families and investment
+                                properties.</p>
+                            <div class="features-list">
+                                <ul>
+                                    <li><i class="flaticon-play-button"></i>ISI certified materials</li>
+                                    <li><i class="flaticon-play-button"></i>Earthquake resistant structure</li>
+                                    <li><i class="flaticon-play-button"></i>Energy efficient designs</li>
+                                    <li><i class="flaticon-play-button"></i>Vastu compliant layouts</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-auto col-md-12 pr-0">
-                    <div class="amazing-projects-slider owl-carousel">
-                        <div class="slider-item">
-                            <div class="image">
-                                <img src="assets/img/projects/project-img-11.jpg" alt="Demo Image">
-                            </div>
-                            <div class="overlay-content">
-                                <h3><a href="projects-details.html">Multi Stored</a></h3>
+                <div class="col-lg-6 col-md-12">
+                    <div class="detailed-service-item">
+                        <div class="service-header">
+                            <i><img src="assets/img/icons/blueprint.png" alt="Design Planning"></i>
+                            <h3>Design & Planning</h3>
+                        </div>
+                        <div class="service-content">
+                            <p><strong>Architectural Design:</strong> Creative and functional designs that blend
+                                contemporary aesthetics with Indian architectural traditions, ensuring optimal space
+                                utilization and natural lighting.</p>
+                            <p><strong>Structural Design:</strong> Engineering excellence with detailed structural
+                                calculations, ensuring safety and durability while complying with Indian building codes
+                                and local regulations.</p>
+                            <p><strong>3D Elevations & Interior Layouts:</strong> Photorealistic visualizations and
+                                detailed interior planning to help you envision your dream home before construction
+                                begins.</p>
+                            <div class="features-list">
+                                <ul>
+                                    <li><i class="flaticon-play-button"></i>AutoCAD drafting</li>
+                                    <li><i class="flaticon-play-button"></i>3D modeling & rendering</li>
+                                    <li><i class="flaticon-play-button"></i>Structural engineering</li>
+                                    <li><i class="flaticon-play-button"></i>Government approval assistance</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="slider-item">
-                            <div class="image">
-                                <img src="assets/img/projects/project-img-12.jpg" alt="Demo Image">
-                            </div>
-                            <div class="overlay-content">
-                                <h3><a href="projects-details.html">Studio Architecture</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="detailed-service-item">
+                        <div class="service-header">
+                            <i><img src="assets/img/icons/barrier.png" alt="Project Execution"></i>
+                            <h3>Project Execution</h3>
+                        </div>
+                        <div class="service-content">
+                            <p><strong>Turnkey Construction:</strong> Complete end-to-end construction management from
+                                foundation laying to final handover, with dedicated project managers ensuring quality
+                                and timeline adherence.</p>
+                            <p><strong>Civil Works:</strong> Expert execution of footings, slabs, beams, brickwork, and
+                                structural elements using modern construction techniques and quality materials.</p>
+                            <p><strong>Electrical & Plumbing Works:</strong> Advanced electrical installations with
+                                smart home integration and efficient plumbing systems designed for Indian climate
+                                conditions.</p>
+                            <div class="features-list">
+                                <ul>
+                                    <li><i class="flaticon-play-button"></i>Project management</li>
+                                    <li><i class="flaticon-play-button"></i>Quality control</li>
+                                    <li><i class="flaticon-play-button"></i>Safety compliance</li>
+                                    <li><i class="flaticon-play-button"></i>Timeline adherence</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="slider-item">
-                            <div class="image">
-                                <img src="assets/img/projects/project-img-13.jpg" alt="Demo Image">
-                            </div>
-                            <div class="overlay-content">
-                                <h3><a href="projects-details.html">Energy Science</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="detailed-service-item">
+                        <div class="service-header">
+                            <i><img src="assets/img/icons/brush.png" alt="Finishing Works"></i>
+                            <h3>Finishing Works</h3>
+                        </div>
+                        <div class="service-content">
+                            <p><strong>Flooring & Tiling:</strong> Premium flooring solutions including marble, granite,
+                                vitrified tiles, and hardwood flooring sourced from reputed Indian and international
+                                suppliers.</p>
+                            <p><strong>Painting & Interiors:</strong> Professional painting services with
+                                weather-resistant paints and complete interior design solutions including false ceilings
+                                and lighting.</p>
+                            <p><strong>Modular Kitchen & Wardrobes:</strong> Custom-designed modular kitchens and
+                                wardrobes with international-grade hardware and finishes suited for Indian cooking and
+                                storage needs.</p>
+                            <div class="features-list">
+                                <ul>
+                                    <li><i class="flaticon-play-button"></i>Premium materials</li>
+                                    <li><i class="flaticon-play-button"></i>Expert craftsmanship</li>
+                                    <li><i class="flaticon-play-button"></i>Custom designs</li>
+                                    <li><i class="flaticon-play-button"></i>After-sales service</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="slider-item">
-                            <div class="image">
-                                <img src="assets/img/projects/project-img-14.jpg" alt="Demo Image">
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="detailed-service-item">
+                        <div class="service-header">
+                            <i><img src="assets/img/icons/measurement1.png" alt="Additional Services"></i>
+                            <h3>Additional Services</h3>
+                        </div>
+                        <div class="service-content">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p><strong>Renovation & Remodeling:</strong> Transform your existing home with
+                                        modern upgrades while preserving its character and charm.</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p><strong>Sump, Compound Wall & Landscaping:</strong> Complete external works
+                                        including water storage solutions and beautiful landscaping.</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <p><strong>Liaison Support:</strong> Assistance with government approvals, RERA
+                                        documentation, and all legal requirements for hassle-free construction.</p>
+                                </div>
                             </div>
-                            <div class="overlay-content">
-                                <h3><a href="projects-details.html">Catalyst Architects</a></h3>
+                            <div class="features-list">
+                                <ul>
+                                    <li><i class="flaticon-play-button"></i>Government liaison</li>
+                                    <li><i class="flaticon-play-button"></i>Legal documentation</li>
+                                    <li><i class="flaticon-play-button"></i>RERA compliance</li>
+                                    <li><i class="flaticon-play-button"></i>Post-construction support</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="cta-section text-center mt-5">
+                <h3>Ready to Start Your Dream Home Project?</h3>
+                <p>Contact us today for a free consultation and detailed project estimate.</p>
+                <div class="cta-btn">
+                    <a href="contact.html" class="primary-btn">Get Free Consultation</a>
+                    <a href="projects.html" class="primary-btn btn-outline">View Our Projects</a>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- end amazing projects section -->
+    <!-- end detailed services section -->
 
     <!-- start footer area -->
     <footer class="footer-area pt-100 pb-70 bg-primary">
